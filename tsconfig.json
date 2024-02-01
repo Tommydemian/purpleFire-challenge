@@ -20,6 +20,15 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
+  /* TypeScript Plugin for CSS Modules */
+  "plugins": [
+    {
+      "name": "typescript-plugin-css-modules",
+      "options": {
+        "camelCase": true
+      }
+    }
+  ],
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

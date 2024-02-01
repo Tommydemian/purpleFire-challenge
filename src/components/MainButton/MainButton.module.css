@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap");
+
+.button {
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  color: #a06056;
+  background: none;
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
+  font-size: 17px;
+}
+
+.button-product-details {
+  font-family: Inter, system-ui;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  background-color: #e73c17;
+  border: none;
+  outline: none;
+  width: 202px;
+  height: 60px;
+}
+
+.button-product-details-variant {
+  font-family: Inter, system-ui;
+  font-weight: 500;
+  font-size: 18px;
+  color: #e73c17;
+  background-color: #fff;
+  border: 2px solid #e73c17;
+  outline: none;
+  width: 202px;
+  height: 60px;
+}
+
+button:hover {
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
