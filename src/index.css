@@ -1,6 +1,101 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Lato:wght@900&family=Merriweather:wght@300;400;700&family=Varta:wght@300;400;600;700&display=swap');
 
 :root {
+  /* text colors */
+  --landing-color-terracotta: #a06056;
+  --landing-color-brownLight: rgba(112, 100, 88, 0.9);
+  --landing-color-brownDark: #534b42;
+  --landing-color-walnutBrown: #706458;
+  --landing-color-nigth: #121212;
+  /* bg colors */
+  --landing-bg-color-isabelline: #f3eee8;
+  --landing-input-bg: rgba(243, 238, 232, 0.3)
+
+  /* common colors */
+  --color-white: #fff;
+
+  /* icons color */
+
+  /* font family */
+  --ff-primary: 'Merriweather', serif;
+  --ff-secondary: 'Varta', sans-serif;
+  --ff-heading: var(--ff-primary);
+  --ff-caption: var(--ff-secondary);
+  --ff-body: var(--ff-secondary)
+  --ff-cta: 'Karla', sans-serif;
+
+  /* font-weight */
+  --fw-light: 300
+  --fw-regular: 400
+  --fw-semibold: 600
+  --fw-bold: 700
+  --fw-mainTitle: var(--fw-light)
+  --fw-heading: var(--fw-regular)
+
+  /* font size */
+  --fs-small: 0.875rem; /* 14px */
+  --fs-medium: 1rem; /* 16px */
+  --fs-large: 1.125rem; /* 18px */
+  --fs-xlarge: 1.375rem; /* 22px */
+  --fs-xxlarge: 2.125rem; /* 34px */
+
+  --landing-fs-logo: 2.125rem 
+  --landing-fs-navLink: 1.125rem 
+  --landing-fs-heroCaption: 0.875rem 
+  --landing-fs-heroTitle:  3.125rem 
+  --landing-fs-heroDesc: 1.375rem 
+  
+  /* font size */
+--landing-fs-servicesTitle: 3.4375rem;
+--landing-fs-servicesCTA: 1.0625rem;
+--landing-fs-servicesCaption: 1.5625rem;
+--landing-fs-servicesBody: 1.125rem;
+
+--landing-fs-trendsTitle: 2.1875rem;
+--landing-fs-trendsCaption: 1.125rem;
+--landing-fs-trendsCTA: 1.0625rem;
+--landing-fs-trendsInputText: 1.125rem;
+--landing-fs-trendsButtonText: 1.0625rem;
+--landing-fs-inspirationsSecondaryTitle: 2.8125rem;
+--landing-fs-inspirationsBody: 1.125rem;
+
+--landing-fs-footerLogo: 2.125rem;  
+--landing-fs-footerCaption: 1.5625rem;
+--landing-fs-footerCaptionOptions: 1.125rem;
+--landing-fs-footerTitle: 1.5625rem; 
+--landing-fs-footerCTA: 1.0625rem;
+--landing-fs-footerCompany: var(--fs-large);
+--landing-fs-footerPolicyLinks: var(--fs-large);
+
+/* Teléfonos en modo retrato y dispositivos más pequeños */
+@media (max-width: 30em) { /* 480px / 16px = 30em */ }
+
+/* Teléfonos en modo paisaje a tabletas en modo retrato */
+@media (min-width: 30em) and (max-width: 48em) { /* 768px / 16px = 48em */ }
+
+/* Tabletas en modo paisaje y computadoras portátiles pequeñas */
+@media (min-width: 48em) and (max-width: 64em) { /* 1024px / 16px = 64em */ }
+
+/* Escritorios grandes y pantallas de alta resolución */
+@media (min-width: 64em) { /* 1024px y más */ }
+
+
+
+
+  
+
+
+
+
+  /* line-height */
+  --landing-lh: 25px
+
+
+
+
+
+
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -15,49 +110,68 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-body {
+/* Remove default margin */
+* {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  font: inherit;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
 }
 
-button {
-  font-family: inherit;
-  cursor: pointer;
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
 }
-/* button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
