@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -7,6 +8,12 @@ export default defineConfig({
   css: {
     modules: {
       localsConvention: "camelCaseOnly",
+    },
+  },
+  resolve: {
+    alias: {
+      // Define un alias '@' que apunta al directorio 'src'
+      "@": path.resolve(__dirname, "./src"),
     },
   },
 });

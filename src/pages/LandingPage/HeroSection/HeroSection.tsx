@@ -1,5 +1,5 @@
 import styles from "./HeroSection.module.css";
-import { Header } from "../Header/Header";
+import { Header } from "../../../components/Header/Header";
 import { HeroContent } from "./HeroContent/HeroContent";
 
 export const HeroSection = () => {

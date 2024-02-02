@@ -1,6 +1,8 @@
 import { Logo } from "../Logo/Logo";
 import styles from "./Header.module.css";
+
 import hamburguerMenu from "../../assets/images/LandingPage/hamburguerMenu.png";
+import { navLinks } from "../../data/LandingPage/navlinksData";
 
 export const Header = () => {
   return (
@@ -12,18 +14,11 @@ export const Header = () => {
         alt="hamburguer menu icon"
       />
       <nav className={styles.navLinks}>
-        <a href="/products" className={styles.navLink}>
-          Products
-        </a>
-        <a href="/rooms" className={styles.navLink}>
-          Rooms
-        </a>
-        <a href="/services" className={styles.navLink}>
-          Services
-        </a>
-        <a href="/inspirations" className={styles.navLink}>
-          Inspirations
-        </a>
+        {navLinks.map((link) => (
+          <a key={link} href={`/${link}`} className={styles.navLink}>
+            {link}
+          </a>
+        ))}
       </nav>
     </div>
   );

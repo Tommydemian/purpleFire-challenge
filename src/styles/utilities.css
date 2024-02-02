@@ -1,0 +1,64 @@
+.landing-container {
+  --max-width: 71.25rem; /* 1140px */
+  --padding: 2rem;
+
+  width: min(var(--max-width), 100% - var(--padding) * 2);
+  margin-inline: auto;
+}
+
+/* Define base .flow styles */
+.flow > * + * {
+}
+
+/* Utilize CSS variables for margin-top values in different .flow classes */
+:where(.flow-size-50 > :not(:first-child)) {
+  margin-top: var(--size-50, 0.5rem); /* 8px */
+}
+:where(.flow-size-100 > :not(:first-child)) {
+  margin-top: var(--size-100, 0.75rem); /* 12px */
+}
+
+:where(.flow-size-200 > :not(:first-child)) {
+  margin-top: var(--size-200, 0.938rem); /* 15px */
+}
+
+:where(.flow-size-300 > :not(:first-child)) {
+  margin-top: var(--size-300, 1.375rem); /* 22px */
+}
+
+:where(.flow-size-400 > :not(:first-child)) {
+  margin-top: var(--size-400, 1.875rem); /* 30px */
+}
+
+:where(.flow-size-500 > :not(:first-child)) {
+  margin-top: var(--size-500, 2.5rem); /*  to 40px  */
+}
+
+:where(.flow-size-600 > :not(:first-child)) {
+  margin-top: var(--size-500, 3.125rem); /*  to 50px  */
+}
+
+:where(.flow-size-700 > :not(:first-child)) {
+  margin-top: var(--size-700, 4.375rem); /* 70px */
+}
+
+/* padding-block */
+
+.padding-block-500 {
+  padding-block: var(--size-500);
+}
+
+.padding-block-section {
+  padding-block: var(--size-600);
+}
+
+@media screen and (min-width: 30em) {
+  .padding-block-section {
+    padding-block: var(--size-700);
+  }
+}
+
+/* font-family */
+.font-primary {
+  font-family: var(--ff-primary);
+}

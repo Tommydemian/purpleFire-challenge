@@ -17,6 +17,7 @@
 .navLinks {
   display: flex;
   gap: 1rem;
+  text-transform: capitalize;
   /* otros estilos */
 }
 

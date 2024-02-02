@@ -20,7 +20,7 @@
 }
 
 .heroDescription {
-  color: #f7f8f9;
+  color: var(--clr-white);
   font-size: var(--fs-large);
   font-family: var(--ff-secondary);
 }

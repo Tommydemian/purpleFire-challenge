@@ -1,7 +1,4 @@
-import "./App.css";
-import { MainButton } from "./components/MainButton/MainButton";
-import { CustomIcon } from "./components/CustomIcon/CustomIcon";
-import { LandingPage } from "./pages/LandingPage";
+import { LandingPage } from "./pages/LandingPage/LandingPage";
 
 function App() {
   return (

@@ -1,0 +1,14 @@
+.cardTitle {
+  font-family: var(--ff-secondary);
+  color: var(--landing-clr-primary);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-xlarge);
+  line-height: 1.875em;
+}
+
+.cardDescription {
+  font-family: var(--ff-secondary);
+  color: var(--landing-clr-tertiary);
+  font-size: var(--fs-large);
+  line-height: 25px;
+}

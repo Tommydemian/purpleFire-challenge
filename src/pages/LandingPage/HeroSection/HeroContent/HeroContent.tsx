@@ -1,6 +1,6 @@
 import styles from "./HeroContent.module.css";
 
-import scrollDownImg from "../../../assets/images/LandingPage/scrollDown.png";
+import scrollDownImg from "../../../../assets/images/LandingPage/scrollDown.png";
 
 export const HeroContent = () => {
   return (
