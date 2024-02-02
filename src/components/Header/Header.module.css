@@ -1,0 +1,10 @@
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hambuerguerMenu {
+  width: 1.5em;
+  height: 0.75em;
+}

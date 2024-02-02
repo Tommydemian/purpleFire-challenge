@@ -1,0 +1,24 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-image: url("/src/assets/images/LandingPage/heroImg/heroImg-small-1.webp"); /* Imagen para móviles por defecto */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: url("/src/assets/images/LandingPage/heroImg/heroImg-mid-1.webp");
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    background-image: url("/src/assets/images/LandingPage/heroImg/heroImg-big-1.webp");
+  }
+}
