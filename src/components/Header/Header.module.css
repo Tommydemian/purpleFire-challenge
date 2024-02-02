@@ -2,9 +2,39 @@
   position: absolute;
   display: flex;
   justify-content: space-between;
+  top: 2.5em;
+  width: 100%;
+  padding-inline: 1em;
 }
 
-.hambuerguerMenu {
+.hamburguerMenu {
   width: 1.5em;
   height: 0.75em;
+  display: block;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1rem;
+  /* otros estilos */
+}
+
+.navLinks .navLink {
+  text-decoration: none;
+  color: var(--landing-clr-secondary);
+  font-size: var(--fs-large);
+  font-family: var(ff-secondary);
+}
+
+/* Estilo para ocultar en móviles */
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .hamburguerMenu {
+    display: none;
+  }
 }

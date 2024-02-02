@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Lato:wght@900&family=Merriweather:wght@300;400;700&family=Varta:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Lato:wght@900&family=Merriweather:wght@300;400;700&family=Varta:wght@300;400;600;700&display=swap");
 
 :root {
   /* text colors */
   --landing-clr-primary: #a06056;
   --landing-clr-secondary: #706458;
   --landing-clr-tertiary: rgba(112, 100, 88, 0.9);
-  --landing-color-brownDark: #534B42;
+  --landing-color-brownDark: #534b42;
   --landing-color-nigth: #121212;
   --landing-clr-navLink: var(--landing-clr-secondary);
   --landing-clr-body: var(--landing-clr-tertiary);
@@ -19,20 +19,20 @@
   /* icons color */
 
   /* font family */
-  --ff-primary: 'Merriweather', serif;
-  --ff-secondary: 'Varta', sans-serif;
+  --ff-primary: "Merriweather", serif;
+  --ff-secondary: "Varta", sans-serif;
   --ff-heading: var(--ff-primary);
   --ff-caption: var(--ff-secondary);
-  --ff-body: var(--ff-secondary)
-  --ff-cta: 'Karla', sans-serif;
+  --ff-body: var(--ff-secondary);
+  --ff-cta: "Karla", sans-serif;
 
   /* font-weight */
-  --fw-light: 300
-  --fw-regular: 400
-  --fw-semibold: 600
-  --fw-bold: 700
-  --fw-mainTitle: var(--fw-light)
-  --fw-heading: var(--fw-regular)
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-mainTitle: var(--fw-light);
+  --fw-heading: var(--fw-regular);
 
   /* font size */
   --fs-small: 0.875rem; /* 14px */
@@ -41,36 +41,36 @@
   --fs-xlarge: 1.375rem; /* 22px */
   --fs-xxlarge: 2.125rem; /* 34px */
 
-  --landing-fs-logo: 2.125rem 
-  --landing-fs-navLink: 1.125rem 
-  --landing-fs-heroCaption: 0.875rem 
-  --landing-fs-heroTitle:  3.125rem 
-  --landing-fs-heroDesc: 1.375rem 
-  
+  --landing-fs-logo: 2.125rem;
+  --landing-fs-navLink: 1.125rem;
+  --landing-fs-heroCaption: 0.875rem;
+  --landing-fs-heroTitle: 3.125rem;
+  --landing-fs-heroDesc: 1.375rem;
+
   /* font size */
---landing-fs-servicesTitle: 3.4375rem;
---landing-fs-servicesCTA: 1.0625rem;
---landing-fs-servicesCaption: 1.5625rem;
---landing-fs-servicesBody: 1.125rem;
+  --landing-fs-servicesTitle: 3.4375rem;
+  --landing-fs-servicesCTA: 1.0625rem;
+  --landing-fs-servicesCaption: 1.5625rem;
+  --landing-fs-servicesBody: 1.125rem;
 
---landing-fs-trendsTitle: 2.1875rem;
---landing-fs-trendsCaption: 1.125rem;
---landing-fs-trendsCTA: 1.0625rem;
---landing-fs-trendsInputText: 1.125rem;
---landing-fs-trendsButtonText: 1.0625rem;
---landing-fs-inspirationsSecondaryTitle: 2.8125rem;
---landing-fs-inspirationsBody: 1.125rem;
+  --landing-fs-trendsTitle: 2.1875rem;
+  --landing-fs-trendsCaption: 1.125rem;
+  --landing-fs-trendsCTA: 1.0625rem;
+  --landing-fs-trendsInputText: 1.125rem;
+  --landing-fs-trendsButtonText: 1.0625rem;
+  --landing-fs-inspirationsSecondaryTitle: 2.8125rem;
+  --landing-fs-inspirationsBody: 1.125rem;
 
---landing-fs-footerLogo: 2.125rem;  
---landing-fs-footerCaption: 1.5625rem;
---landing-fs-footerCaptionOptions: 1.125rem;
---landing-fs-footerTitle: 1.5625rem; 
---landing-fs-footerCTA: 1.0625rem;
---landing-fs-footerCompany: var(--fs-large);
---landing-fs-footerPolicyLinks: var(--fs-large);
+  --landing-fs-footerLogo: 2.125rem;
+  --landing-fs-footerCaption: 1.5625rem;
+  --landing-fs-footerCaptionOptions: 1.125rem;
+  --landing-fs-footerTitle: 1.5625rem;
+  --landing-fs-footerCTA: 1.0625rem;
+  --landing-fs-footerCompany: var(--fs-large);
+  --landing-fs-footerPolicyLinks: var(--fs-large);
 
   /* line-height */
-  --landing-lh: 1.5em
+  --landing-lh: 1.5em;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -78,38 +78,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media screeen and (min-width: 30em) { 
-
+@media screeen and (min-width: 30em) {
 }
 
- /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
 
- /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { }
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
 
- /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { }
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
 
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-  
-  /* color-scheme: light dark; */
-  
-  
+/* color-scheme: light dark; */
 
 /* CSS RESET */
 /* Box sizing rules */
@@ -176,4 +160,3 @@ svg {
     scroll-behavior: auto !important;
   }
 }
-

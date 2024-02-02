@@ -3,13 +3,14 @@
   max-width: 35ch;
   display: flex;
   flex-direction: column;
-  row-gap: 1em;
+  row-gap: 0.5em;
 }
 
 .heroSubtitle {
   color: var(--clr-white);
   font-size: var(--fs-small);
   font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
 }
 
 .heroTitle {
@@ -28,4 +29,39 @@
   width: 3.125em;
   height: 3.125em;
   align-self: center;
+}
+
+@media (min-width: 768px) {
+  .heroContentContainer {
+    text-align: left;
+    max-width: 35ch;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+  }
+
+  .heroSubtitle {
+    color: var(--landing-clr-primary);
+    font-size: var(--fs-small);
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-bold);
+  }
+
+  .heroTitle {
+    color: var(--landing-clr-primary);
+    font-size: var(--fs-xxlarge);
+    font-family: var(--ff-primary);
+  }
+
+  .heroDescription {
+    color: var(--landing-clr-tertiary);
+    font-size: var(--fs-large);
+    font-family: var(--ff-secondary);
+  }
+
+  .scrollDownIcon {
+    width: 3.125em;
+    height: 3.125em;
+    align-self: normal;
+  }
 }

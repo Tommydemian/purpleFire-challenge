@@ -3,4 +3,5 @@
   font-weight: var(--fw-bold);
   font-size: var(--fs-xxlarge);
   letter-spacing: 2px;
+  color: var(--clr-white);
 }
