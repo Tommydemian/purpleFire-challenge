@@ -1,3 +1,7 @@
+/* * {
+  border: 1px solid lime;
+} */
+
 @import "./reset.css";
 @import "./utilities.css";
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Lato:wght@900&family=Merriweather:wght@300;400;700&family=Varta:wght@300;400;600;700&display=swap");
@@ -37,14 +41,16 @@
   --fw-black: 900;
   --fw-mainTitle: var(--fw-light);
   --fw-heading: var(--fw-regular);
-
+  
   /* font size */
   --fs-small: 0.875rem; /* 14px */
   --fs-medium: 1rem; /* 16px */
   --fs-large: 1.125rem; /* 18px */
-  --fs-xlarge: 1.375rem; /* 22px */
-  --fs-xxlarge: 2.125rem; /* 34px */
-  --fs-xxxlarge: 3.438rem; /* 55px */
+  --fs-xl: 1.375rem; /* 22px */
+  --fs-2xl: 2.125rem; /* 34px */
+  --fs-3xl: 2.813rem; /* 45px */
+  --fs-4xl: 3.438rem; /* 55px */
+
 
   --landing-fs-logo: 2.125rem;
   --landing-fs-navLink: 1.125rem;
@@ -52,30 +58,8 @@
   --landing-fs-heroTitle: 3.125rem;
   --landing-fs-heroDesc: 1.375rem;
 
-  /* font size */
-  --landing-fs-servicesTitle: 3.4375rem;
-  --landing-fs-servicesCTA: 1.0625rem;
-  --landing-fs-servicesCaption: 1.5625rem;
-  --landing-fs-servicesBody: 1.125rem;
-
-  --landing-fs-trendsTitle: 2.1875rem;
-  --landing-fs-trendsCaption: 1.125rem;
-  --landing-fs-trendsCTA: 1.0625rem;
-  --landing-fs-trendsInputText: 1.125rem;
-  --landing-fs-trendsButtonText: 1.0625rem;
-  --landing-fs-inspirationsSecondaryTitle: 2.8125rem;
-  --landing-fs-inspirationsBody: 1.125rem;
-
-  --landing-fs-footerLogo: 2.125rem;
-  --landing-fs-footerCaption: 1.5625rem;
-  --landing-fs-footerCaptionOptions: 1.125rem;
-  --landing-fs-footerTitle: 1.5625rem;
-  --landing-fs-footerCTA: 1.0625rem;
-  --landing-fs-footerCompany: var(--fs-large);
-  --landing-fs-footerPolicyLinks: var(--fs-large);
-
+  
   /* size */
-
   --size-50: 0.5rem; /* 8px */
   --size-100: 0.75rem; /* 12px */
   --size-200: 0.938rem; /* 15px */
@@ -84,6 +68,14 @@
   --size-500: 2.5rem; /* 40px */
   --size-600: 3.125rem; /* 50px */
   --size-700: 4.375rem; /* 70px */
+
+  /* line height */
+  --ln-200: 1.563rem; /* 25px */
+  --lh-400: 2.5rem; /* 40px */
+
+  /* letter spacing */
+  --ls-400: -0.3px /* No sense to make it rem unit */
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

@@ -1,16 +1,17 @@
 import React from "react";
-import { MainButton } from "../../MainButton/MainButton";
 import styles from "./NewsletterSignup.module.css";
 
 export const NewsletterSignup = () => {
   return (
-    <div className={styles.container}>
+    <form className={styles.container}>
       <input
         className={styles.input}
         placeholder="email@address.com"
-        type="text"
+        type="email"
       />
-      <button className={styles.button}>Subscribe</button>
-    </div>
+      <button className={styles.button} type="submit">
+        Subscribe
+      </button>
+    </form>
   );
 };

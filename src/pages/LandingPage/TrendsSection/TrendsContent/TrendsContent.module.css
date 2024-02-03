@@ -1,0 +1,23 @@
+.heading {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-2xl);
+  line-height: var(--lh-400);
+  letter-spacing: -0.01875rem; /* -0.3px */
+  color: var(--landing-color-nigth);
+}
+
+.description {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-medium);
+  line-height: var(--ln-heighth);
+  color: var(--landing-clr-secondary);
+  max-width: 290px;
+}
+
+@media screen and (min-width: 30em) {
+  .description {
+    max-width: none;
+  }
+}

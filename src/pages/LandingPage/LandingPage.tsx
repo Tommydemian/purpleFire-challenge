@@ -1,20 +1,18 @@
 import { Header } from "../../components/Header/Header";
 import { HeroSection } from "./HeroSection/HeroSection";
 import { ServicesSection } from "./ServicesSection/ServicesSection";
-import { NewsletterSignup } from "../../components/LandingPage/NewsletterSignup/NewsletterSignup";
+import { TrendsSection } from "./TrendsSection/TrendsSection";
+import { InspirationsSection } from "./InspirationSection/InspirationsSection";
 import styles from "./LandingPage.module.css";
 
 export const LandingPage = () => {
   return (
-    <section className={styles.bgColor}>
+    <div className={styles.bgColor}>
       <Header />
       <HeroSection />
       <ServicesSection />
-      <section className={styles.secondayBgColor}>
-        <div>
-          <NewsletterSignup />
-        </div>
-      </section>
-    </section>
+      <TrendsSection />
+      <InspirationsSection />
+    </div>
   );
 };

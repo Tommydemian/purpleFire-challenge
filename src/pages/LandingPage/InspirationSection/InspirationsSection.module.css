@@ -3,13 +3,8 @@
   align-items: center;
   row-gap: 1em;
 }
+
 .sectionContainer {
   background-color: var(--clr-white);
-}
-
-@media screen and (min-width: 30em) {
-  .contentContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
+  padding-bottom: var(--size-600);
 }

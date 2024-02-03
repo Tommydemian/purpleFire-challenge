@@ -38,6 +38,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--size-400);
-    margin-left: 1em;
+    margin-left: auto;
   }
 }
