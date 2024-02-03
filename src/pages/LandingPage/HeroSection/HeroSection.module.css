@@ -37,11 +37,22 @@
 
   .heroContent {
     grid-column: 1 / 2;
+    width: 100%;
+
+    justify-self: center;
+    max-width: 35.625rem;
+    margin-left: auto;
   }
 }
 
 @media (min-width: 1200px) {
   .imageBg {
     background-image: url("/src/assets/images/LandingPage/heroImg/heroImg-big-1.webp");
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 30em) {
+  .heroContent {
+    padding-left: 2rem;
   }
 }

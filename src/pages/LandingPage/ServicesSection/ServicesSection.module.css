@@ -3,3 +3,41 @@
   grid-template-columns: 1fr;
   row-gap: 2.5em;
 }
+
+.cta {
+  font-family: var(--ff-tertiary);
+  font-weight: var(--fw-black);
+  color: var(--landing-clr-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 17px;
+}
+
+@media screen and (min-width: 30em) {
+  .sectionContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .cta {
+    font-family: var(--ff-cta);
+    font-weight: var(--fw-bold);
+    color: var(--landing-clr-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 17px;
+  }
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--size-400);
+    margin-left: 1em;
+  }
+}

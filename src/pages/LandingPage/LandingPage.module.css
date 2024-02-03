@@ -1,3 +1,7 @@
 .bgColor {
   background-color: var(--landing-bg-color-isabelline);
 }
+
+.secondayBgColor {
+  background-color: var(--clr-white);
+}

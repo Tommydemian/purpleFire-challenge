@@ -1,0 +1,14 @@
+.container {
+  width: 455px;
+  height: var(--size-600);
+}
+
+.input {
+  background-color: var(--landing-input-bg);
+  border: none;
+  outline: none;
+}
+
+.button {
+  background-color: var(--landing-clr-secondary);
+}

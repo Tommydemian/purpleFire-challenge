@@ -1,45 +1,39 @@
 .header {
   position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  top: 2.5em;
+  top: var(--size-600);
   width: 100%;
-  padding-inline: 1em;
+  z-index: 500;
+}
+
+.navWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: var(--size-300);
 }
 
 .hamburguerMenu {
   width: 1.5em;
   height: 0.75em;
   display: block;
+  z-index: 100;
 }
 
-.navLinks {
-  display: flex;
-  gap: 1rem;
-  text-transform: capitalize;
-  /* otros estilos */
+.contactIcon {
+  display: none;
 }
 
-.navLinks .navLink {
-  text-decoration: none;
-  color: var(--landing-clr-secondary);
-  font-size: var(--fs-large);
-  font-family: var(ff-secondary);
-}
-
-/* Estilo para ocultar en móviles */
-@media (max-width: 30em) {
-  .navLinks {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 30em) {
-  .header {
+@media screen and (min-width: 59.688em) {
+  .navWrapper {
     justify-content: flex-start;
   }
   .hamburguerMenu {
     display: none;
+  }
+  .contactIcon {
+    display: block;
+    z-index: 100;
+    visibility: visible;
+    margin-left: auto;
   }
 }

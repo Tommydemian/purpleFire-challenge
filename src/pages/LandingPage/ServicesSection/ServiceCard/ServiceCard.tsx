@@ -10,7 +10,7 @@ export const ServiceCard: React.FC<Props> = ({ title, description }) => {
   return (
     <div className="flow flow-size-50">
       <h3 className={styles.cardTitle}>{title}</h3>
-      <p>{description}</p>
+      <p className={styles.cardDescription}>{description}</p>
     </div>
   );
 };

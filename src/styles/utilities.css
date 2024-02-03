@@ -6,6 +6,13 @@
   margin-inline: auto;
 }
 
+.content-container {
+  --max-width: 71.25rem; /* 1140px */
+  --padding: 2rem;
+
+  width: min(var(--max-width), 100% - var(--padding) * 2);
+}
+
 /* Define base .flow styles */
 .flow > * + * {
 }

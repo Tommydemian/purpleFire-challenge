@@ -11,4 +11,5 @@
   color: var(--landing-clr-tertiary);
   font-size: var(--fs-large);
   line-height: 25px;
+  max-width: 29ch;
 }

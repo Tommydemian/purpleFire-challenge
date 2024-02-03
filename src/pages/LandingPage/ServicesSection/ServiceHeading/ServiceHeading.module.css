@@ -2,4 +2,14 @@
   font-family: var(--ff-primary);
   line-height: 40px;
   font-size: var(--fs-xxlarge);
+  color: var(--landing-color-brownDark);
+}
+
+@media screen and (min-width: 30em) {
+  .heading {
+    color: var(--landing-clr-secondary);
+    line-height: 60px;
+    font-size: var(--fs-xxxlarge);
+    max-width: 14ch;
+  }
 }

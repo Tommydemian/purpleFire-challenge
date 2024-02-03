@@ -12,18 +12,23 @@ import {
 
 export const ServicesSection = () => {
   return (
-    <section className="landing-container | padding-block-section">
-      <ServiceHeading />
-      <div className="padding-block-500">
-        <MainButton section="landing">
-          Find out more
-          <span>
-            <CustomIcon
-              name="ep:arrow-right-bold"
-              style={{ color: "#A06056" }}
-            />
-          </span>
-        </MainButton>
+    <section
+      id="services-section"
+      className={`landing-container | padding-block-section ${styles.sectionContainer}`}
+    >
+      <div>
+        <ServiceHeading />
+        <div className="padding-block-500">
+          <MainButton className={styles.cta} section="landing">
+            Find out more
+            <span>
+              <CustomIcon
+                name="ep:arrow-right-bold"
+                style={{ color: "#A06056" }}
+              />
+            </span>
+          </MainButton>
+        </div>
       </div>
       <div className={styles.cardsContainer}>
         {servicesData.map((service: ServiceItem) => (

@@ -1,18 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap");
 
+/* MainButton.module.css */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap");
+
 .button {
   display: flex;
   align-items: center;
+  justify-content: center;
+  background: none;
   border: none;
   outline: none;
+}
+
+.buttonLanding {
+  /* Asegúrate de que el nombre de la clase aquí coincide con el nombre en el archivo JSX */
   color: #a06056;
-  background: none;
   font-weight: 700;
   font-family: "Karla", sans-serif;
   font-size: 17px;
 }
 
-.button-product-details {
+.buttonLandingVarian {
+  background-color: ;
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
+  font-size: 17px;
+}
+
+.buttonProductDetails {
+  /* Asegúrate de que el nombre de la clase aquí coincide con el nombre en el archivo JSX */
   font-family: Inter, system-ui;
   font-weight: 500;
   font-size: 18px;
@@ -24,7 +40,8 @@
   height: 60px;
 }
 
-.button-product-details-variant {
+.buttonProductDetailsVariant {
+  /* Asegúrate de que el nombre de la clase aquí coincide con el nombre en el archivo JSX */
   font-family: Inter, system-ui;
   font-weight: 500;
   font-size: 18px;
@@ -36,9 +53,34 @@
   height: 60px;
 }
 
-button:hover {
+/* Estilos para hover y focus */
+.button:hover {
+  /* Estilos para hover */
 }
-button:focus,
-button:focus-visible {
+
+.button:focus,
+.button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* MainButton.module.css */
+.button {
+  /* estilos base del botón */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  /* estilos cuando el ratón pasa por encima del botón */
+  background-color: none; /* color que quieres en hover */
+}
+
+.button:active {
+  /* estilos cuando el botón está siendo presionado */
+  transform: scale(0.95); /* efecto de presión */
+}
+
+.button:focus {
+  /* estilos para cuando el botón está enfocado después de ser clickeado */
+  outline: none; /* elimina el contorno predeterminado */
+  /* otros estilos de foco si necesarios */
 }

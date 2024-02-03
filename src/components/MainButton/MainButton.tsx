@@ -3,7 +3,7 @@ import styles from "./MainButton.module.css";
 
 type Props = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   children: React.ReactNode;
-  section: "landing" | "product";
+  section?: "landing" | "product";
   variant?: boolean;
 };
 
@@ -13,17 +13,19 @@ export const MainButton: React.FC<Props> = ({
   variant,
   ...rest
 }) => {
+  let buttonStyle = styles.button;
+
+  if (section) {
+    buttonStyle =
+      section === "landing"
+        ? `${styles.button} ${styles.buttonLanding}`
+        : variant
+        ? styles.buttonProductDetailsVariant
+        : styles.buttonProductDetails;
+  }
+
   return (
-    <button
-      className={
-        section === "landing"
-          ? styles.button
-          : section === "product" && variant
-          ? styles.buttonProductDetailsVariant
-          : styles.buttonProductDetails
-      }
-      {...rest}
-    >
+    <button className={buttonStyle} {...rest}>
       {children}
     </button>
   );
