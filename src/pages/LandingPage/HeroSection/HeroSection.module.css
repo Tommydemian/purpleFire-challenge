@@ -1,6 +1,6 @@
 .hero {
   display: grid;
-  height: 90vh;
+  height: 41.688rem;
   position: relative;
   align-items: center;
   justify-items: center;
@@ -28,6 +28,7 @@
 @media (min-width: 30em) {
   .hero {
     grid-template-columns: 1fr 1fr;
+    height: 56.25rem;
   }
 
   .imageBg {
