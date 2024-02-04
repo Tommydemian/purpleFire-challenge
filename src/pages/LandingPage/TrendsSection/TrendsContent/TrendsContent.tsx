@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./TrendsContent.module.css";
 import { MainButton } from "../../../../components/MainButton/MainButton";
 import { CustomIcon } from "../../../../components/CustomIcon/CustomIcon";

@@ -1,4 +1,3 @@
-import React from "react";
 import type { CarouselItem } from "../../../../data/LandingPage/carouselItemsData";
 import styles from "../PhoneCarousel.module.css";
 

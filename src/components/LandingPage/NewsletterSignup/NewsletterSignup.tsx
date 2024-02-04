@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./NewsletterSignup.module.css";
 
 export const NewsletterSignup = () => {

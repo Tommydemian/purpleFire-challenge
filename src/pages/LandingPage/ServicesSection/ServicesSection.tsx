@@ -1,4 +1,3 @@
-import React from "react";
 import { ServiceCard } from "./ServiceCard/ServiceCard";
 import { MainButton } from "../../../components/MainButton/MainButton";
 import { CustomIcon } from "../../../components/CustomIcon/CustomIcon";

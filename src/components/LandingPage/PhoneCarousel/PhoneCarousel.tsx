@@ -1,4 +1,3 @@
-import React from "react";
 import { PhoneCarouselItem } from "./PhoneCarouselItem/PhoneCarouselItem";
 import styles from "./PhoneCarousel.module.css";
 import {

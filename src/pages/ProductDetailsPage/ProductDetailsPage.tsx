@@ -1,4 +1,3 @@
-import React from "react";
 import { MultiLayerHeader } from "./MultiLayerHeader/MultiLayerHeader";
 import styles from "./ProductDetailsPage.module.css";
 

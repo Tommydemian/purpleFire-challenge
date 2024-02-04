@@ -1,4 +1,3 @@
-import React from "react";
 import { TrendsContent } from "./TrendsContent/TrendsContent";
 import { NewsletterSignup } from "../../../components/LandingPage/NewsletterSignup/NewsletterSignup";
 import styles from "./TrendsSection.module.css";

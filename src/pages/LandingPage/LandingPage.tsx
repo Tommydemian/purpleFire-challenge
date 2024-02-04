@@ -1,4 +1,3 @@
-import React from "react";
 import { useIsMobile } from "../../hooks/useIsMobile";
 import { Header } from "../../components/Header/Header";
 import { HeroSection } from "./HeroSection/HeroSection";

@@ -1,4 +1,3 @@
-import React from "react";
 import { FacebookIcon } from "../../../SocialMediaIcons/Facebook";
 import { TwitterIcon } from "../../../SocialMediaIcons/Twitter";
 import { LinkedinIcon } from "../../../SocialMediaIcons/Linkedin";

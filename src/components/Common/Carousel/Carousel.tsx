@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { CarouselItem } from "./CarouselItem/CarouselItem";
 import styles from "./Carousel.module.css";
 import { desktopCarouselItems } from "../../../data/LandingPage/carouselItemsData";

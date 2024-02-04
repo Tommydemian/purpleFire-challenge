@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./ServiceHeading.module.css";
 
 export const ServiceHeading = () => {

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./PrimaryNavigation.module.css";
 import { navLinks } from "../../data/LandingPage/navlinksData";
 

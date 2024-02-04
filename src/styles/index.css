@@ -103,6 +103,9 @@
 /* color-scheme: light dark; */
 
 /* General styling */
+body {
+ font-family: var(--products-primary-ff);
+}
 button {
   cursor: pointer;
 }
@@ -114,5 +117,4 @@ a {
 ul {
   list-style-type: none;
 }
-
 

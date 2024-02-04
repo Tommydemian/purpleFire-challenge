@@ -5,7 +5,6 @@
   display: flex;
   gap: 1rem;
   text-transform: capitalize;
-  /* otros estilos */
 }
 
 .navLinks .navLink {
@@ -13,9 +12,11 @@
   color: var(--landing-clr-secondary);
   font-size: var(--fs-large);
   font-family: var(ff-secondary);
+  line-height: var(--ln-200);
+  font-family: var(--ff-secondary);
 }
 
-/* Estilo para ocultar en móviles */
+/* hide in small devices */
 @media (max-width: 59.688em) {
   .primaryNavigation {
     display: none;

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./LegalLinks.module.css";
 
 export const LegalLinks = () => {
