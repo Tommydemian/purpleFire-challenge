@@ -1,0 +1,28 @@
+.articleContainer {
+  padding-block: var(--size-500);
+}
+
+.title {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-semibold);
+  font-size: 1.5625rem; /* 25px */
+  line-height: 1.875rem; /* 30px */
+  letter-spacing: -0.0125rem; /* Aproximadamente -0.2px, sin variable existente */
+  color: var(--landing-color-brownDark);
+}
+
+.image {
+}
+
+.description {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-large); /* Asume que esto se acerca a 18px */
+  line-height: var(--ln-200); /* 25px */
+  color: rgba(
+    0,
+    0,
+    0,
+    0.45
+  ); /* No hay una variable exacta, color aplicado directamente */
+}

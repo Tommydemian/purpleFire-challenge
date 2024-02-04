@@ -1,0 +1,17 @@
+.title {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-semibold);
+  font-size: 1.5625rem; /* 25px */
+  line-height: 1.875rem; /* 30px */
+  letter-spacing: var(--ls-400);
+  color: var(--landing-color-nigth);
+  margin-bottom: 10px;
+}
+
+.link {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-large);
+  line-height: var(--ln-200);
+  color: var(--landing-clr-secondary);
+}

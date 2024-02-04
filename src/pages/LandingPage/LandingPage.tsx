@@ -7,6 +7,7 @@ import { TrendsSection } from "./TrendsSection/TrendsSection";
 import { InspirationsSection } from "./InspirationSection/InspirationsSection";
 import { Carousel } from "../../components/Common/Carousel/Carousel";
 import { PhoneCarousel } from "../../components/LandingPage/PhoneCarousel/PhoneCarousel";
+import { Footer } from "../../components/Common/Footer/Footer";
 import styles from "./LandingPage.module.css";
 
 export const LandingPage = () => {
@@ -29,6 +30,7 @@ export const LandingPage = () => {
           <InspirationsSection />
         </>
       )}
+      <Footer />
     </div>
   );
 };

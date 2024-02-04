@@ -1,0 +1,4 @@
+.linkColumns {
+  display: grid;
+  row-gap: var(--size-500);
+}

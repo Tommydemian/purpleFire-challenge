@@ -1,0 +1,17 @@
+.socialMediaLinksContainer {
+  padding-bottom: var(--size-500);
+}
+
+.socialMediaLinks {
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+
+  height: 32px;
+  width: 32px;
+  fill: var(--landing-clr-tertiary);
+}

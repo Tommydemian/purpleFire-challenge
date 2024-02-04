@@ -1,0 +1,11 @@
+.copyRightSection {
+  padding-block: var(--size-400);
+}
+
+.text {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-large);
+  line-height: var(--ln-200);
+  color: var(--landing-clr-tertiary);
+}

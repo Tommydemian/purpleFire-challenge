@@ -2,8 +2,17 @@
   font-family: var(--ff-primary);
   font-weight: var(--fw-bold);
   font-size: var(--fs-2xl);
+  line-height: var(--lh---ln-200);
   letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   color: var(--clr-white);
+}
+
+.footerLogo {
+  color: var(--landing-color-brownDark);
+  text-align: center;
+  display: block;
+  margin-bottom: var(--size-500);
 }
 
 @media screen and (min-width: 30em) {

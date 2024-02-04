@@ -51,6 +51,10 @@
 
 /* padding-block */
 
+.padding-block-400 {
+  padding-block: var(--size-400);
+}
+
 .padding-block-500 {
   padding-block: var(--size-500);
 }

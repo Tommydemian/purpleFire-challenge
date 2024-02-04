@@ -1,29 +1,7 @@
 .bgColor {
   background-color: var(--landing-bg-color-isabelline);
-  display: flex;
-  flex-direction: column;
 }
 
 .secondayBgColor {
   background-color: var(--clr-white);
-}
-
-/* Default mobile layout */
-.inspirationsSection {
-  order: 1;
-}
-
-.carousel {
-  order: 2;
-}
-
-/* Desktop layout */
-@media (min-width: 30em) {
-  .inspirationsSection {
-    order: 2;
-  }
-
-  .carousel {
-    order: 1;
-  }
 }
