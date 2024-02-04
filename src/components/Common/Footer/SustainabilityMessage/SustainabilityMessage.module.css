@@ -26,3 +26,9 @@
     0.45
   ); /* No hay una variable exacta, color aplicado directamente */
 }
+
+@media screen and (min-width: 30em) {
+  .articleContainer {
+    padding-block: 0;
+  }
+}

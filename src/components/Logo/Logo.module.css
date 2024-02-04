@@ -20,4 +20,14 @@
     color: var(--landing-clr-primary);
     margin-right: 0.5rem;
   }
+  .footerLogo {
+    font-family: var(--ff-primary); /* Merriweather */
+    font-weight: var(--fw-bold); /* 700 */
+    font-size: var(
+      --fs-2xl
+    ); /* Asumiendo que esto se acerca a 34px, ya que es 2.125rem */
+    line-height: var(--ln-200); /* 25px */
+    letter-spacing: 0.125rem; /* 2px convertido a rem */
+    color: var(--landing-color-brownDark); /* #534B42 */
+  }
 }

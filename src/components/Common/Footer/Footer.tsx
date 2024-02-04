@@ -1,4 +1,6 @@
 import React from "react";
+import { useIsMobile } from "../../../hooks/useIsMobile";
+
 import { Logo } from "../../Logo/Logo";
 import { LinkList } from "./LinkListt/LinkList";
 import { SustainabilityMessage } from "./SustainabilityMessage/SustainabilityMessage";
@@ -10,21 +12,36 @@ import styles from "./Footer.module.css";
 import { linkListData } from "../../../data/LandingPage/footerData";
 
 export const Footer = () => {
+  const { isMobile } = useIsMobile();
   return (
     <footer>
-      <div className="landing-container padding-block-400">
-        <Logo section="footer" />
-        <div id="grid" className={styles.linkColumns}>
-          {linkListData.map((item) => {
-            return (
-              <LinkList title={item.title} links={item.links} key={item.id} />
-            );
-          })}
+      <div className={`landing-container ${styles.footerContentContainer} `}>
+        <div className={styles.topContainer}>
+          <Logo section="footer" />
+          <div className={styles.linkColumns}>
+            {linkListData.map((item) => {
+              return (
+                <LinkList title={item.title} links={item.links} key={item.id} />
+              );
+            })}
+          </div>
+          <SustainabilityMessage />
         </div>
-        <SustainabilityMessage />
-        <SocialMediaLinks />
-        <LegalLinks />
-        <CopyRight />
+        <div className={styles.bottomContainer}>
+          {isMobile ? (
+            <>
+              <SocialMediaLinks />
+              <LegalLinks />
+              <CopyRight />
+            </>
+          ) : (
+            <>
+              <CopyRight />
+              <SocialMediaLinks />
+              <LegalLinks />
+            </>
+          )}
+        </div>
       </div>
     </footer>
   );

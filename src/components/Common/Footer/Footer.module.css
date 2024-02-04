@@ -1,4 +1,30 @@
+.footerContentContainer {
+  padding-block: var(--size-400);
+}
+
 .linkColumns {
   display: grid;
   row-gap: var(--size-500);
+}
+
+@media screen and (min-width: 30em) {
+  .footerContentContainer {
+    padding-block: var(--size-700);
+  }
+  .topContainer {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 64px;
+  }
+  .linkColumns {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: var(--size-600);
+  }
+
+  .bottomContainer {
+    padding-top: var(--size-600);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
