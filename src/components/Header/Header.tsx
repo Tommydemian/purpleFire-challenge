@@ -1,4 +1,4 @@
-import { Logo } from "../Logo/Logo";
+import { Logo } from "../../pages/LandingPage/LandingLogo/LandingLogo";
 import { PrimaryNavigation } from "../PrimaryNavigation/PrimaryNavigation";
 import styles from "./Header.module.css";
 

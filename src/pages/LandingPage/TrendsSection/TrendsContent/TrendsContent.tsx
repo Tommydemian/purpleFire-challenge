@@ -1,6 +1,6 @@
 import styles from "./TrendsContent.module.css";
 import { MainButton } from "../../../../components/MainButton/MainButton";
-import { CustomIcon } from "../../../../components/CustomIcon/CustomIcon";
+import { CustomIcon } from "../../../../components/Common/CustomIcon/CustomIcon";
 
 export const TrendsContent = () => {
   return (

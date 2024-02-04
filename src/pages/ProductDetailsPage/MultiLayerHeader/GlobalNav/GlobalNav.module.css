@@ -1,0 +1,66 @@
+.globalNavContainer {
+  height: 9.375em;
+  display: flex;
+  align-items: center;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid #f0f0f0;
+  height: 76px;
+  background-color: var(--clr-white);
+  padding-inline: var(--size-500);
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.allCategoriesButton {
+  color: var(--products-clr-text-primary);
+  font-weight: var(--fw-light);
+  font-size: var(--fs-xl);
+  line-height: var(--lh-200);
+  padding-right: 131px;
+  padding-left: var(--size-300);
+}
+
+.authLink {
+  color: var(--products-clr-text-primary);
+  font-weight: var(--fw-light);
+  font-size: var(--fs-xl);
+  line-height: var(--lh-200);
+}
+
+.authLinksSeparator {
+  color: #f0f0f0;
+  padding-inline: 0.3em;
+}
+
+.userInteractionsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.cartIconContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.cartBadge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: var(--products-clr-primary);
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75em;
+}

@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lato:wght@900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap");
 :root {
   /* font-family */
   --products-primary-ff: "Inter", sans-serif;
+  --products-logo-ff: "Inconsolata", monospace;
 
   --products-clr-primary: #e73c17;
   --products-clr-secondary: #f4f5f8;
@@ -11,7 +12,7 @@
   --products-clr-background: #ffffff;
 
   /* Text color for primary content, typically a dark grey or black */
-  --products-clr-text-primary: #333333;
+  --products-clr-text-primary: #191919;
 
   /* Text color for secondary content, possibly a lighter grey */
   --products-clr-text-secondary: #757575;

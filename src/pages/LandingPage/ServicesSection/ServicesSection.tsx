@@ -1,6 +1,6 @@
 import { ServiceCard } from "./ServiceCard/ServiceCard";
 import { MainButton } from "../../../components/MainButton/MainButton";
-import { CustomIcon } from "../../../components/CustomIcon/CustomIcon";
+import { CustomIcon } from "../../../components/Common/CustomIcon/CustomIcon";
 import { ServiceHeading } from "./ServiceHeading/ServiceHeading";
 import styles from "./ServicesSection.module.css";
 

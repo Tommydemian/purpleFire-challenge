@@ -1,0 +1,55 @@
+/* Styles that apply to all resolutions */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input,
+.button {
+  border-radius: 1px;
+  border: none;
+  outline: none;
+}
+
+.input {
+  background-color: var(--landing-input-bg);
+  padding: 12px 15px;
+  height: 50px;
+  /* width: 296px; */
+}
+
+input::placeholder {
+  color: #969696;
+}
+
+.button {
+  background-color: var(--products-bg-tertiary);
+  color: var(--clr-white);
+  /* font-family: var(--ff-cta);
+  font-size: 17px;
+  font-weight: bold; */
+  cursor: pointer;
+  padding: 12px 30px;
+  height: 50px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column; /* Stack the elements */
+  }
+
+  .input {
+    width: 311px; /* Fixed width for mobile */
+    margin-bottom: 10px; /* Gap between input and button */
+    height: auto;
+    flex-grow: 1;
+  }
+
+  .button {
+    width: 290px; /* Fixed width for mobile */
+    height: auto;
+    align-self: baseline;
+  }
+}

@@ -71,9 +71,11 @@
   --size-700: 4.375rem; /* 70px */
 
   /* line height */
-  --ln-100: 19.36px
-  --ln-200: 1.563rem; /* 25px */
+  --ln-100: 19.36px;
+  --lh-200: 1.563rem; /* 25px */
   --lh-400: 2.5rem; /* 40px */
+  --lh-500: 50.35px;
+
 
   /* letter spacing */
   --ls-400: -0.3px /* No sense to make it rem unit */
@@ -110,11 +112,13 @@ button {
   cursor: pointer;
 }
 
-a {
-  text-decoration: none;
-}
+a { color: inherit; text-decoration: none; } 
+
 
 ul {
   list-style-type: none;
 }
 
+li {
+  text-decoration: none;
+}

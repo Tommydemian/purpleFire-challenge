@@ -1,4 +1,4 @@
-import styles from "./Logo.module.css";
+import styles from "./LandingLogo.module.css";
 
 type Props = {
   section?: "header" | "footer";

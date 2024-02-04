@@ -1,6 +1,6 @@
 import { useIsMobile } from "../../../hooks/useIsMobile";
 
-import { Logo } from "../../Logo/Logo";
+import { Logo } from "../../../pages/LandingPage/LandingLogo/LandingLogo";
 import { LinkList } from "./LinkListt/LinkList";
 import { SustainabilityMessage } from "./SustainabilityMessage/SustainabilityMessage";
 import { SocialMediaLinks } from "./SocialMediaLinks/SocialMediaLinks";

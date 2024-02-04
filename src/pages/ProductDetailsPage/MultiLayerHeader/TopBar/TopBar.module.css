@@ -1,0 +1,29 @@
+.topBar {
+  display: none;
+}
+.topBarContainer {
+  background-color: var(--products-bg-tertiary);
+  height: 60px;
+}
+.topBarText {
+  color: var(--clr-white);
+  font-weight: var(--fw-light);
+  font-size: 1rem;
+}
+.topBarButton {
+  font-weight: var(--fw-light);
+}
+.topBarList {
+  display: flex;
+}
+
+@media screen and (min-width: 30em) {
+  .topBar {
+    height: 100%;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3em;
+  }
+}

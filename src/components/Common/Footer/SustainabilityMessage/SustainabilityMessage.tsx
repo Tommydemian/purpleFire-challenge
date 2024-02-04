@@ -1,5 +1,5 @@
 import { MainButton } from "../../../MainButton/MainButton";
-import { CustomIcon } from "../../../CustomIcon/CustomIcon";
+import { CustomIcon } from "../../CustomIcon/CustomIcon";
 import { sustainabilityData } from "../../../../data/LandingPage/sustainabilityMessageData";
 import styles from "./SustainabilityMessage.module.css";
 
