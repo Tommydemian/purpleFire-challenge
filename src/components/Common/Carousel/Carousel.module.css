@@ -11,15 +11,18 @@
   grid-auto-flow: column;
   column-gap: 1.25rem;
   background-color: var(--clr-white);
-  padding-bottom: var(--size-500);
+  /* padding-bottom: var(--size-500); */
 }
 
 .itemScroller {
   grid-auto-columns: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  padding-bottom: var(--size-500);
 }
 
 .itemGroup {
   grid-auto-columns: 1fr;
+  position: relative;
+  right: 2rem;
 }

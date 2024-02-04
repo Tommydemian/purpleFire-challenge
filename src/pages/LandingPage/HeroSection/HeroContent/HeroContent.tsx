@@ -1,21 +1,11 @@
 import styles from "./HeroContent.module.css";
-import { useEffect, useState } from "react";
+import { useIsMobile } from "../../../../hooks/useIsMobile";
+
 import scrollDownImg from "../../../../assets/images/LandingPage/scrollDown.png";
 import brownScrollDownImg from "../../../../assets/images/LandingPage/scrollDownBrown.png";
 
 export const HeroContent = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 480); // 30em generalmente es igual a 480px
-
-  useEffect(() => {
-    function handleResize() {
-      setIsMobile(window.innerWidth < 480);
-    }
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const { isMobile } = useIsMobile();
 
   const handleScroll = () => {
     const nextSection = document.getElementById("services-section");

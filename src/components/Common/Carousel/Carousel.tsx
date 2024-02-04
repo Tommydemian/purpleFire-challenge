@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { CarouselItem } from "./CarouselItem/CarouselItem";
 import styles from "./Carousel.module.css";
-import { carouselItems } from "../../../data/LandingPage/carouselItemsData";
+import { desktopCarouselItems } from "../../../data/LandingPage/carouselItemsData";
 
 export const Carousel = () => {
   //   const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,7 +26,7 @@ export const Carousel = () => {
     // </div>
     <div className={styles.itemScroller}>
       <div className={styles.itemGroup}>
-        {carouselItems.map((item) => (
+        {desktopCarouselItems.map((item) => (
           <CarouselItem id={item.id} item={item.item} key={item.id} />
         ))}
       </div>
