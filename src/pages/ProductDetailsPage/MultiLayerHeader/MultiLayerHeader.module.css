@@ -1,0 +1,55 @@
+.topBar {
+  display: none;
+  font-family: var(--products-primary-ff);
+}
+.topBarContainer {
+  background-color: var(--products-bg-tertiary);
+  height: 60px;
+}
+
+.topBarText {
+  color: var(--clr-white);
+  font-weight: var(--fw-light);
+  font-size: 1rem;
+}
+
+/* main header */
+.mainHeader {
+  height: 150px;
+  display: flex;
+}
+
+/* primary nav */
+.primaryNavigation {
+  height: 76px;
+}
+
+.breadCrumb {
+  height: 256px;
+  background-color: var(--products-clr-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.breadCrumbList {
+  display: flex;
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+@media screen and (min-width: 30em) {
+  .topBar {
+    height: 100%;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--products-bg-tertiary);
+  }
+}

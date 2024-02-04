@@ -4,6 +4,7 @@
 
 @import "./reset.css";
 @import "./utilities.css";
+@import "./productDetails.css";
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Lato:wght@900&family=Merriweather:wght@300;400;700&family=Varta:wght@300;400;600;700&display=swap");
 
 :root {
@@ -70,6 +71,7 @@
   --size-700: 4.375rem; /* 70px */
 
   /* line height */
+  --ln-100: 19.36px
   --ln-200: 1.563rem; /* 25px */
   --lh-400: 2.5rem; /* 40px */
 

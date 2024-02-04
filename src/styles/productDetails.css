@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lato:wght@900&display=swap");
+
+:root {
+  /* font-family */
+  --products-primary-ff: "Inter", sans-serif;
+
+  --products-clr-primary: #e73c17;
+  --products-clr-secondary: #f4f5f8;
+  --products-bg-tertiary: #2f333a;
+  /* Background color for the website, a very light grey or off-white */
+  --products-clr-background: #ffffff;
+
+  /* Text color for primary content, typically a dark grey or black */
+  --products-clr-text-primary: #333333;
+
+  /* Text color for secondary content, possibly a lighter grey */
+  --products-clr-text-secondary: #757575;
+
+  /* Borders and dividers, a light grey that's slightly darker than the background */
+  --products-clr-border: #dddddd;
+
+  /* Highlights or accents, possibly for links or buttons, a shade of orange */
+  --products-clr-accent: #ffc107;
+
+  /* Error messages or critical actions, a bright red */
+  --products-clr-error: #d32f2f;
+
+  /* Success messages or confirmations, a shade of green */
+  --products-clr-success: #4caf50;
+
+  /* Information messages or active elements, a shade of blue */
+  --products-clr-info: #1e88e5;
+
+  /* This may not be on the page, but it's good to define a hover state for interactive elements */
+  --products-clr-hover: rgba(0, 0, 0, 0.1);
+}
