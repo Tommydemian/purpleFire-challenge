@@ -11,7 +11,7 @@ import slide6 from "../../assets/images/LandingPage/carousel/carouselpic-6.png";
 export const PhoneCarousel = () => {
   return (
     <div className={styles.scroller}>
-      <div className="scroller__inner">
+      <div className={styles.scrollerInner}>
         <div className={styles.carouselItem}>
           <img
             className={styles.specialCarouselImage}
