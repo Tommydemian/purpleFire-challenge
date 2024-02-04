@@ -15,7 +15,7 @@
 
 .heroTitle {
   color: var(--clr-white);
-  font-size: var(--fs-xxlarge);
+  font-size: var(--fs-2xl);
   font-family: var(--ff-primary);
 }
 
@@ -54,7 +54,7 @@
 
   .heroTitle {
     color: var(--landing-clr-primary);
-    font-size: var(--fs-xxlarge);
+    font-size: var(--fs-2xl);
     font-family: var(--ff-primary);
   }
 

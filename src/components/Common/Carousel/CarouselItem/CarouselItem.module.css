@@ -1,0 +1,26 @@
+.carouselItem {
+  flex: 0 0 auto; /* Prevents the items from growing or shrinking */
+  width: 250px; /* Width of each item, adjust as needed */
+  scroll-snap-align: start; /* Aligns the items to the snap points */
+  border-radius: 20px; /* Rounded corners for aesthetics */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow */
+  overflow: hidden; /* Ensures the content is clipped to the border radius */
+}
+
+.carouselImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.specialCarouselImage {
+  max-width: none;
+  height: 400px;
+  width: 250px;
+}
+
+/* Optional: Add hover effect for carousel items */
+.carouselItem:hover {
+  transform: scale(1.03); /* Slight zoom effect */
+  transition: transform 0.3s ease-in-out;
+}

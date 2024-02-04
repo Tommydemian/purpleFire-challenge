@@ -1,0 +1,25 @@
+/* .carouselContainer {
+  display: flex;
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory; 
+  gap: 16px; 
+  padding: 16px; 
+} */
+.itemScroller,
+.itemGroup {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 1.25rem;
+  background-color: var(--clr-white);
+  padding-bottom: var(--size-500);
+}
+
+.itemScroller {
+  grid-auto-columns: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.itemGroup {
+  grid-auto-columns: 1fr;
+}
