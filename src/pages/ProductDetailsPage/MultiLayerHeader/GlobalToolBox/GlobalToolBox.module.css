@@ -1,4 +1,6 @@
-.globalToolBarContainer {
-  height: 76px;
-  background-color: var(--products-bg-tertiary);
+@media screen and (min-width: 30em) {
+  .globalToolBarContainer {
+    height: 76px;
+    background-color: var(--products-bg-tertiary);
+  }
 }

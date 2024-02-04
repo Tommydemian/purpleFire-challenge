@@ -1,4 +1,4 @@
-import { useIsMobile } from "../../../hooks/useIsMobile";
+import { useMobileContext } from "../../../contexts/MobileContext";
 
 import { Logo } from "../../../pages/LandingPage/LandingLogo/LandingLogo";
 import { LinkList } from "./LinkListt/LinkList";
@@ -11,7 +11,7 @@ import styles from "./Footer.module.css";
 import { linkListData } from "../../../data/LandingPage/footerData";
 
 export const Footer = () => {
-  const { isMobile } = useIsMobile();
+  const { isMobile } = useMobileContext();
   return (
     <footer>
       <div className={`landing-container ${styles.footerContentContainer} `}>

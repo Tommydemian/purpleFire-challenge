@@ -4,6 +4,7 @@
 .topBarContainer {
   background-color: var(--products-bg-tertiary);
   height: 60px;
+  display: none;
 }
 .topBarText {
   color: var(--clr-white);
@@ -17,7 +18,7 @@
   display: flex;
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 40em) {
   .topBar {
     height: 100%;
     display: block;
@@ -25,5 +26,8 @@
     justify-content: space-between;
     align-items: center;
     padding-left: 3em;
+  }
+  .topBarContainer {
+    display: block;
   }
 }

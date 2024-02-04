@@ -16,7 +16,7 @@
   font-family: var(--ff-secondary);
   color: var(--landing-clr-tertiary);
   font-size: var(--fs-large);
-  line-height: var(--ln-200);
+  line-height: var(--lh-200);
 }
 
 @media screen and (min-width: 30em) {

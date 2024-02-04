@@ -1,4 +1,5 @@
-import { useIsMobile } from "../../hooks/useIsMobile";
+import { useMobileContext } from "../../contexts/MobileContext";
+
 import { Header } from "../../components/Header/Header";
 import { HeroSection } from "./HeroSection/HeroSection";
 import { ServicesSection } from "./ServicesSection/ServicesSection";
@@ -10,7 +11,7 @@ import { Footer } from "../../components/Common/Footer/Footer";
 import styles from "./LandingPage.module.css";
 
 export const LandingPage = () => {
-  const { isMobile } = useIsMobile();
+  const { isMobile } = useMobileContext();
 
   return (
     <div className={styles.bgColor}>

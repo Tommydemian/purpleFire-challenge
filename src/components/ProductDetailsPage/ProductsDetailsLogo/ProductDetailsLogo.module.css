@@ -1,13 +1,24 @@
 .logoContainer {
   display: flex;
   align-items: baseline;
-  column-gap: 0.25em;
 }
 
 .logo {
-  font-family: var(--products-logo-ff);
-  font-weight: var(--fw-bold);
-  font-size: var(--fs-3xl);
-  line-height: var(--lh-500);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: var(--lh-100);
   color: var(--products-clr-text-primary);
+}
+
+@media screen and (min-width: 40em) {
+  .logoContainer {
+    display: flex;
+    align-items: baseline;
+    column-gap: 0.25em;
+  }
+  .logo {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-3xl);
+    line-height: var(--lh-500);
+  }
 }

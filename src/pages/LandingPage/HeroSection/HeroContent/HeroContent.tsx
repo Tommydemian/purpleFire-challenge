@@ -1,11 +1,12 @@
+import { useMobileContext } from "../../../../contexts/MobileContext";
+
 import styles from "./HeroContent.module.css";
-import { useIsMobile } from "../../../../hooks/useIsMobile";
 
 import scrollDownImg from "../../../../assets/images/LandingPage/scrollDown.png";
 import brownScrollDownImg from "../../../../assets/images/LandingPage/scrollDownBrown.png";
 
 export const HeroContent = () => {
-  const { isMobile } = useIsMobile();
+  const { isMobile } = useMobileContext();
 
   const handleScroll = () => {
     const nextSection = document.getElementById("services-section");

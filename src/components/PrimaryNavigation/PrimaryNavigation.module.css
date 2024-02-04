@@ -12,7 +12,7 @@
   color: var(--landing-clr-secondary);
   font-size: var(--fs-large);
   font-family: var(ff-secondary);
-  line-height: var(--ln-200);
+  line-height: var(--lh-200);
   font-family: var(--ff-secondary);
 }
 
