@@ -9,6 +9,16 @@
   .heading {
     color: var(--landing-clr-secondary);
     line-height: 60px;
+    font-size: var(--fs-3xl);
+    max-width: 14ch;
+    padding-right: 6px;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .heading {
+    color: var(--landing-clr-secondary);
+    line-height: 60px;
     font-size: var(--fs-4xl);
     max-width: 14ch;
   }
