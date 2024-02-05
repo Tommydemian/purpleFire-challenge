@@ -1,0 +1,40 @@
+.centralImage {
+  margin-inline: auto;
+  padding-top: 10px;
+}
+
+.imageDesc {
+  font-size: 0.625rem;
+  line-height: 0.75625rem;
+  color: #6f6f6f;
+  text-align: center;
+}
+
+.productTitle {
+  color: var(--products-clr-text-primary);
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.05875rem;
+  padding-bottom: 0.5em;
+  max-width: 33ch;
+}
+
+.ratingContainer {
+  display: flex;
+}
+
+.featureList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-block: 12px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.featureList li {
+  font-weight: 300;
+  font-size: 0.6875rem;
+  line-height: 0.831875rem;
+  padding-bottom: 8px;
+  color: var(--products-clr-text-primary);
+}

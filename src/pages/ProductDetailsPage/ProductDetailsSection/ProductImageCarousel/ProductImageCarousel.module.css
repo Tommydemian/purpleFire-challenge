@@ -1,0 +1,27 @@
+.sectionContainer {
+  padding-block: 11px;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.leftArrow,
+.rightArrow {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftArrow {
+  background-color: #d9d9d9;
+}
+
+.rightArrow {
+  background-color: var(--products-clr-primary);
+}
