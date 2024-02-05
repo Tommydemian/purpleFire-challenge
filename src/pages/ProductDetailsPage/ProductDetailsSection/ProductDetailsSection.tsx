@@ -3,7 +3,6 @@ import tvImage from "../../../assets/images/ProductDetailsPage/tv.png";
 import { ProductImageCarousel } from "./ProductImageCarousel/ProductImageCarousel";
 import { ProductDetails } from "./ProductDetails/ProductDetails";
 import { ProductRating } from "./ProductRating/ProductRating";
-import { CustomIcon } from "../../../components/Common/CustomIcon/CustomIcon";
 
 import styles from "./ProductDetailsSection.module.css";
 import { featuresData } from "../../../data/ProductDetailsPage/productFeatureListData";
