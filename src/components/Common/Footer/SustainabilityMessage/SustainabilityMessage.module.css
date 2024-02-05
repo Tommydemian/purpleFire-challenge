@@ -19,16 +19,21 @@
   font-weight: var(--fw-regular);
   font-size: var(--fs-large); /* Asume que esto se acerca a 18px */
   line-height: var(--lh-200); /* 25px */
-  color: rgba(
-    0,
-    0,
-    0,
-    0.45
-  ); /* No hay una variable exacta, color aplicado directamente */
+  color: rgba(0, 0, 0, 0.45);
+  max-width: 100%;
 }
 
 @media screen and (min-width: 30em) {
   .articleContainer {
     padding-block: 0;
+  }
+  .description {
+    max-width: 34ch;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .description {
+    max-width: 30ch;
   }
 }

@@ -16,7 +16,9 @@ export const Footer = () => {
     <footer>
       <div className={`landing-container ${styles.footerContentContainer} `}>
         <div className={styles.topContainer}>
-          <Logo section="footer" />
+          <div className={styles.logoArea}>
+            <Logo section="footer" />
+          </div>
           <div className={styles.linkColumns}>
             {linkListData.map((item) => {
               return (
@@ -24,7 +26,9 @@ export const Footer = () => {
               );
             })}
           </div>
-          <SustainabilityMessage />
+          <div className={styles.sustainabilityArea}>
+            <SustainabilityMessage />
+          </div>
         </div>
         <div className={styles.bottomContainer}>
           {isMobile ? (

@@ -7,18 +7,36 @@
   row-gap: var(--size-500);
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 30em) and (max-width: 60em) {
   .footerContentContainer {
     padding-block: var(--size-700);
   }
   .topContainer {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 64px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 64px;
   }
+
   .linkColumns {
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: var(--size-600);
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: var(--size-600);
+    grid-column: 1 / -1;
+  }
+
+  .logoArea {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: flex-start;
+  }
+
+  .sustainabilityArea {
+    grid-row: 1;
+    grid-column: 2/3;
+    justify-self: flex-end;
   }
 
   .bottomContainer {
@@ -26,5 +44,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .topContainer {
+    display: flex;
+    column-gap: 1em;
+    gap: 64px;
+  }
+  .linkColumns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--size-500);
   }
 }
