@@ -1,4 +1,4 @@
-/* .carouselItem {
+.carouselItem {
   flex: 0 0 auto;
   width: 250px;
   scroll-snap-align: start;
@@ -17,13 +17,6 @@
   max-width: none;
   height: 400px;
   width: 250px;
-} */
-.carouselItem {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 400px;
-  background-color: #fff;
 }
 
 /* Optional: Add hover effect for carousel items */
