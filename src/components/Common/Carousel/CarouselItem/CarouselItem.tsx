@@ -9,6 +9,7 @@ type Props = {
 export const CarouselItem: React.FC<Props> = ({ item, id }) => {
   return (
     <div className={styles.carouselItem}>
+      <div></div>
       <img
         src={item}
         alt={item}
