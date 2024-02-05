@@ -6,6 +6,7 @@ type CarouselContextType = {
   setActiveIndex: React.Dispatch<React.SetStateAction<number>>;
   handlePrevClick: () => void;
   handleNextClick: () => void;
+  totalSlides: number;
 };
 
 const CarouselContext = createContext<CarouselContextType | undefined>(
@@ -35,7 +36,13 @@ export const CarouselProvider: React.FC<CarouselProviderProps> = ({
 
   return (
     <CarouselContext.Provider
-      value={{ activeIndex, setActiveIndex, handlePrevClick, handleNextClick }}
+      value={{
+        activeIndex,
+        setActiveIndex,
+        handlePrevClick,
+        handleNextClick,
+        totalSlides: desktopCarouselItems.length,
+      }}
     >
       {children}
     </CarouselContext.Provider>

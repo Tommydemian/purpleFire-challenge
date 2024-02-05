@@ -1,0 +1,25 @@
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: var(--size-300);
+}
+
+.arrowWrapper {
+  display: flex;
+  column-gap: 11px;
+}
+
+.counterWrapper {
+  display: flex;
+}
+
+.counterText {
+  font-family: var(--ff-secondary); /* Varta */
+  color: var(--landing-clr-tertiary);
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  opacity: 0.6;
+}

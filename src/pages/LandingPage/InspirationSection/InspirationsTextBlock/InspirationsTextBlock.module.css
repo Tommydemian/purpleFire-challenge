@@ -20,12 +20,6 @@
 }
 
 @media screen and (min-width: 30em) {
-  .blockContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   .heading {
     font-size: var(--fs-3xl);
     font-weight: var(--fw-light);
@@ -33,5 +27,14 @@
 
   .description {
     max-width: 40ch;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .blockContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 1em;
   }
 }

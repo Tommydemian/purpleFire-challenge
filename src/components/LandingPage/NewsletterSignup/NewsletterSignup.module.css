@@ -1,11 +1,10 @@
-/* Styles that apply to all resolutions */
 .container {
   display: flex;
   column-gap: 16px;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-left: auto;
+  /* flex-wrap: wrap; */
+  margin-right: auto;
 }
 
 .input,
@@ -19,7 +18,7 @@
   background-color: var(--landing-input-bg);
   padding: 12px 15px;
   height: 50px;
-  width: 296px;
+  width: 280px;
 }
 
 .button {
@@ -33,10 +32,10 @@
   height: 50px;
 }
 
-/* Media query for mobile devices */
 @media (max-width: 480px) {
   .container {
-    flex-direction: column; /* Stack the elements */
+    display: flex;
+    flex-direction: column;
   }
 
   .input {
@@ -50,5 +49,13 @@
     width: 290px; /* Fixed width for mobile */
     height: auto;
     align-self: baseline;
+  }
+}
+
+@media screen and (min-width: 41.875em) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1em;
   }
 }
