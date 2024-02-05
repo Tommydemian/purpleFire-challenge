@@ -4,8 +4,8 @@ import headsetImg from "../../../../../assets/images/ProductDetailsPage/headset.
 export const ContactInfo = () => {
   return (
     <section className={styles.sectionContainer} aria-labelledby="contact-info">
-      <img src={headsetImg} alt="head set icon" />
-      <div>
+      <img className={styles.image} src={headsetImg} alt="head set icon" />
+      <div className={styles.textContainer}>
         <h3 className={styles.title} id="contact-info">
           Contact Us 24/7
         </h3>

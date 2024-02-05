@@ -2,6 +2,14 @@
   display: grid;
   grid-template-columns: auto 1fr;
 }
+
+.globalToolBarContainer {
+  display: none;
+}
+
+.dropdown {
+}
+
 @media screen and (min-width: 30em) {
   .globalToolBarContainer {
     display: flex;

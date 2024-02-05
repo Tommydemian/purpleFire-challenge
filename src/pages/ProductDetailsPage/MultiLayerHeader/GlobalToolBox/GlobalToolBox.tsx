@@ -9,6 +9,7 @@ export const GlobalToolBox = () => {
       <div className="products-container">
         <div className={styles.contentColumns}>
           <CategoryMenuButton />
+
           <NavLinks />
           <ContactInfo />
         </div>

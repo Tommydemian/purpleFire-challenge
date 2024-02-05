@@ -2,6 +2,28 @@
   background-color: var(--products-clr-primary);
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   column-gap: 1em;
   grid-column: 1;
+  position: relative;
+  height: 4.75rem;
+  z-index: 200;
+}
+
+.menuButtonContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -9999px; /* Extiende el pseudo-elemento hacia la izquierda mucho */
+  right: 0;
+  bottom: 0;
+  background-color: var(--products-clr-primary);
+  z-index: -1;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
 }

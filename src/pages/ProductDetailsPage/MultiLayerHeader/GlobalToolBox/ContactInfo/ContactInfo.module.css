@@ -1,12 +1,9 @@
 .sectionContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.textContainer {
-  display: grid;
-  row-gap: 5px;
-  color: var(--clr-white);
+  display: flex;
+  align-items: center;
+  grid-template-rows: auto auto;
+  row-gap: 1em;
+  border-left: 2px solid #f0f0f0;
 }
 
 .title {
@@ -14,8 +11,23 @@
   font-size: 0.9375rem;
   line-height: 1.134375rem;
   color: var(--clr-white);
+  margin-bottom: 0.3em;
+}
+
+.textContainer {
+  padding-right: 1em;
 }
 
 .phoneNumber {
   color: var(--clr-white);
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.36125rem;
+  margin-bottom: 0.5em;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  padding-inline: 1em;
 }

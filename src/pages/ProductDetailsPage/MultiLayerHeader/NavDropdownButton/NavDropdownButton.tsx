@@ -5,12 +5,16 @@ type Props = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   label: string;
   leftIcon?: boolean;
   iconColor?: string;
+  iconActive?: boolean;
+  onIconCLick?: () => void;
 };
 
 export const NavDropdownButton: React.FC<Props> = ({
   leftIcon,
   label,
   className,
+  iconActive,
+  onIconCLick,
   iconColor = "#fff",
 }) => {
   return (
@@ -19,7 +23,13 @@ export const NavDropdownButton: React.FC<Props> = ({
         <CustomIcon name="ep:arrow-down" style={{ color: "#fff" }} />
       )}
       {label}
-      <CustomIcon name="ep:arrow-down" style={{ color: iconColor }} />
+      {iconActive ? (
+        <button style={{ display: "contents" }} onClick={onIconCLick}>
+          <CustomIcon name="ep:arrow-down" style={{ color: iconColor }} />
+        </button>
+      ) : (
+        <CustomIcon name="ep:arrow-down" style={{ color: iconColor }} />
+      )}
     </button>
   );
 };
