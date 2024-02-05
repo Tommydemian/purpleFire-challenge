@@ -3,7 +3,7 @@ import item2 from "../../assets/images/LandingPage/carousel/carouselpic-2.png";
 import item3 from "../../assets/images/LandingPage/carousel/carouselpic-3.png";
 import item4 from "../../assets/images/LandingPage/carousel/carouselpic-4.png";
 import item5 from "../../assets/images/LandingPage/carousel/carouselpic-5.png";
-import item6 from "../../assets/images/LandingPage/carousel/carouselpic-6.png";
+import item6 from "../../assets/images/LandingPage/carousel/carouselpic-6.jpeg";
 
 export type CarouselItem = {
   item: string;
