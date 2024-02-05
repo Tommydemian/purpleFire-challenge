@@ -6,7 +6,7 @@ type Props = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   leftIcon?: boolean;
   iconColor?: string;
   iconActive?: boolean;
-  onIconCLick?: () => void;
+  onIconClick?: () => void;
 };
 
 export const NavDropdownButton: React.FC<Props> = ({
@@ -14,7 +14,7 @@ export const NavDropdownButton: React.FC<Props> = ({
   label,
   className,
   iconActive,
-  onIconCLick,
+  onIconClick,
   iconColor = "#fff",
 }) => {
   return (
@@ -24,9 +24,9 @@ export const NavDropdownButton: React.FC<Props> = ({
       )}
       {label}
       {iconActive ? (
-        <button style={{ display: "contents" }} onClick={onIconCLick}>
+        <span onClick={onIconClick} style={{ cursor: "pointer" }}>
           <CustomIcon name="ep:arrow-down" style={{ color: iconColor }} />
-        </button>
+        </span>
       ) : (
         <CustomIcon name="ep:arrow-down" style={{ color: iconColor }} />
       )}
