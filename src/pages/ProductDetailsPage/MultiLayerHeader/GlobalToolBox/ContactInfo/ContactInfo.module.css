@@ -1,0 +1,21 @@
+.sectionContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.textContainer {
+  display: grid;
+  row-gap: 5px;
+  color: var(--clr-white);
+}
+
+.title {
+  font-weight: var(--fw-light);
+  font-size: 0.9375rem;
+  line-height: 1.134375rem;
+  color: var(--clr-white);
+}
+
+.phoneNumber {
+  color: var(--clr-white);
+}

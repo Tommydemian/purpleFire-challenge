@@ -1,17 +1,16 @@
-// import CategoryMenuButton from "./CategoryMenuButton";
-// import NavLinks from "./NavLinks";
-// import ContactButton from "./ContactButton";
-import { NavDropdownButton } from "../NavDropdownButton/NavDropdownButton";
+import { CategoryMenuButton } from "./CategoryMenuButon/CategoryMenuButton";
+import { NavLinks } from "./NavLinks/NavLinks";
+import { ContactInfo } from "./ContactInfo/ContactInfo";
 import styles from "./GlobalToolBox.module.css";
 
-export const GlobalToolbar = () => {
+export const GlobalToolBox = () => {
   return (
     <div className={styles.globalToolBarContainer}>
       <div className="products-container">
-        <div className={styles.contentConteiner}>
-          <div>
-            <NavDropdownButton label="All Categiries" />
-          </div>
+        <div className={styles.contentColumns}>
+          <CategoryMenuButton />
+          <NavLinks />
+          <ContactInfo />
         </div>
       </div>
     </div>

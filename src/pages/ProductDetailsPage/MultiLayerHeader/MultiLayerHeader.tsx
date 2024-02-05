@@ -1,6 +1,6 @@
 import { TopBar } from "./TopBar/TopBar";
 import { GlobalNav } from "./GlobalNav/GlobalNav";
-import { GlobalToolbar } from "./GlobalToolBox/GlobalToolBox";
+import { GlobalToolBox } from "./GlobalToolBox/GlobalToolBox";
 
 import styles from "./MultiLayerHeader.module.css";
 
@@ -9,7 +9,7 @@ export const MultiLayerHeader = () => {
     <header>
       <TopBar />
       <GlobalNav />
-      <GlobalToolbar />
+      <GlobalToolBox />
     </header>
   );
 };

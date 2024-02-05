@@ -1,6 +1,17 @@
+.contentColumns {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
 @media screen and (min-width: 30em) {
   .globalToolBarContainer {
-    height: 76px;
+    display: flex;
+    align-items: center;
+    height: 4.75rem;
     background-color: var(--products-bg-tertiary);
+  }
+
+  .contentColumns {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
   }
 }

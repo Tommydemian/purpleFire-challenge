@@ -1,0 +1,7 @@
+.menuButtonContainer {
+  background-color: var(--products-clr-primary);
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+  grid-column: 1;
+}

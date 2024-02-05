@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: flex-start;
   border: 2px solid #f0f0f0;
-  height: 76px;
+  height: 4.75rem;
   background-color: var(--clr-white);
   padding-inline: 3%;
 }
@@ -33,6 +33,7 @@
   line-height: var(--lh-200);
   padding-right: clamp(2em, 4vw, 131px);
   padding-left: var(--size-300);
+  flex-wrap: wrap;
 }
 
 .authLinksContainer {
