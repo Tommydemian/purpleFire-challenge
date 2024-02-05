@@ -1,7 +1,8 @@
 .contentContainer {
-  display: grid;
+  display: flex;
   align-items: center;
-  row-gap: 1em;
+  column-gap: 1em;
+  flex-wrap: wrap;
 }
 
 .sectionContainer {

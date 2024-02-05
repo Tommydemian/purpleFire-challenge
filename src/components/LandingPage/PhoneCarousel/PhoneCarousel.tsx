@@ -9,8 +9,9 @@ export const PhoneCarousel = () => {
   return (
     <section className={styles.scroller}>
       <div className={styles.scrollerInner}>
-        {phoneCarouselItems.map((slide: CarouselItem) => (
-          <PhoneCarouselItem key={slide.id} slide={slide} />
+        {phoneCarouselItems.map((slide: CarouselItem, index) => (
+          // not a recommended pratice to use index as key but it's static content content and giving the pic repetition .id is not working. Usful for quick solve but need refactor.
+          <PhoneCarouselItem key={index} slide={slide} />
         ))}
       </div>
     </section>

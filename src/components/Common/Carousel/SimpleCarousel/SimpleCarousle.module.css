@@ -1,0 +1,71 @@
+.sectionContainer {
+  background-color: var(--clr-white);
+  padding-bottom: 3em;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 400px;
+  padding-block: 1em;
+  background-color: var(--clr-white);
+  margin-inline: auto;
+}
+
+.slide {
+  width: 100%;
+  height: 400px;
+  width: 100%;
+  display: block;
+}
+
+.specialSlide {
+  max-width: none;
+  height: 400px;
+  width: 250px;
+  border-radius: 2em;
+}
+
+.arrowLeft {
+  position: absolute;
+  left: 0;
+}
+
+.arrowRight {
+  position: absolute;
+  right: 0;
+}
+
+.slideHidden {
+  display: none;
+}
+
+/* .carouselItem {
+  flex: 0 0 auto;
+  width: 250px;
+  scroll-snap-align: start;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+} */
+
+.carouselImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.specialCarouselImage {
+  max-width: none;
+  height: 400px;
+  width: 250px;
+}
+
+/* Optional: Add hover effect for carousel items */
+.carouselItem:hover {
+  transform: scale(1.03); /* Slight zoom effect */
+  transition: transform 0.3s ease-in-out;
+}

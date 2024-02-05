@@ -34,17 +34,17 @@ export const EasyCarousel = () => {
             }`}
           />
         ))}
-        Cuato
-        <button onClick={handlePrevClick} style={{ display: "contents" }}>
+
+        <button onClick={handleNextClick} style={{ display: "contents" }}>
           <RightCircledArrowIcon className="arrowRight" />
         </button>
-        <span>
+        {/* <span>
           {desktopCarouselItems.map((_, index) => (
             <button key={index}>
               {activeIndex}/{desktopCarouselItems.length}
             </button>
           ))}
-        </span>
+        </span> */}
       </div>
     </section>
   );
