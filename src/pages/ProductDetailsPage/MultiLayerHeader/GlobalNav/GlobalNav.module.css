@@ -7,36 +7,42 @@
 .searchBox {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   border: 2px solid #f0f0f0;
   height: 76px;
   background-color: var(--clr-white);
-  padding-inline: var(--size-500);
+  padding-inline: 3%;
 }
 
 .contentContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logoContainer {
+  position: relative;
   order: 2;
 }
 
 .allCategoriesButton {
   color: var(--products-clr-text-primary);
   font-weight: var(--fw-light);
-  font-size: var(--fs-xl);
+  font-size: clamp(0.7rem, 2.5vw, var(--fs-xl));
   line-height: var(--lh-200);
-  padding-right: 131px;
+  padding-right: clamp(2em, 4vw, 131px);
   padding-left: var(--size-300);
+}
+
+.authLinksContainer {
+  display: flex;
 }
 
 .authLink {
   color: var(--products-clr-text-primary);
   font-weight: var(--fw-light);
-  font-size: var(--fs-xl);
+  font-size: clamp(0.7rem, 2.5vw, var(--fs-xl));
   line-height: var(--lh-200);
 }
 
@@ -49,6 +55,8 @@
   display: flex;
   align-items: center;
   order: 3;
+  gap: clamp(0.5em, 2vw, 1em);
+  padding-left: 0.3em;
 }
 
 .cartIconContainer {
@@ -107,6 +115,17 @@
   }
 
   .logoContainer {
-    order: 1;
+    order: 0;
+  }
+
+  .userInteractionsContainer {
+    order: 3;
+  }
+}
+
+@media screen and (min-width: 30em) and (max-width: 51.5rem) {
+  .logoContainer {
+    position: absolute;
+    top: -40%;
   }
 }

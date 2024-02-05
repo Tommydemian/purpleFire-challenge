@@ -35,7 +35,7 @@ export const GlobalNav = () => {
                 label="All Categories"
                 iconColor="#191919"
               />
-              <div className="user-actions">
+              <div className={styles.authLinksContainer}>
                 <a className={styles.authLink} href="#" aria-label="Login">
                   Login
                 </a>

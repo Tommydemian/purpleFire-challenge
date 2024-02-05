@@ -18,7 +18,7 @@
   }
   .logo {
     font-weight: var(--fw-bold);
-    font-size: var(--fs-3xl);
+    font-size: clamp(1rem, 3vw, var(--fs-3xl));
     line-height: var(--lh-500);
   }
 }

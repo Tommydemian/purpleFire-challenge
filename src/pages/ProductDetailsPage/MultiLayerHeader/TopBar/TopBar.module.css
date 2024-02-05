@@ -1,5 +1,6 @@
 .topBar {
   display: none;
+  padding-left: unset;
 }
 .topBarContainer {
   background-color: var(--products-bg-tertiary);
@@ -27,9 +28,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 3em;
   }
   .topBarContainer {
     display: block;
+  }
+}
+@media screen and (min-width: 40em) {
+  .topBar {
+    padding-left: 3em;
   }
 }
