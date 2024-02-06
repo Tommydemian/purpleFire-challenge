@@ -9,6 +9,7 @@
   font-size: 0.875rem; /* 14px */
   line-height: 1.0625rem; /* 17px */
   letter-spacing: 0em;
+  transition: background-color 300ms linear;
 }
 
 .primaryBtn {
@@ -41,6 +42,22 @@
 .isMobile {
   height: 2rem !important;
   padding-inline: 1.5rem;
+}
+
+.succesState {
+  color: #fff;
+  background-color: #191919;
+  padding: 0.3em 1em;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.9075rem;
+}
+
+.footerButton {
+  padding: 0.3em 1em;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.9075rem;
 }
 
 /* Hover state for both buttons */

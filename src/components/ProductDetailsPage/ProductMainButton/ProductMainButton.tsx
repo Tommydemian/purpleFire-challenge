@@ -5,19 +5,27 @@ type Props = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   children: React.ReactNode;
   secondary?: boolean;
   addToCart?: boolean;
+  isSubscribed?: boolean;
   isMobile?: boolean;
+  isFooter?: boolean;
 };
 
 export const ProductMainButton: React.FC<Props> = ({
   children,
   secondary,
   addToCart,
+  isSubscribed,
+  isFooter,
   isMobile,
   ...rest
 }) => {
   let buttonClass = `${styles.button}`;
 
-  if (secondary) {
+  if (isFooter) {
+    buttonClass += ` ${styles.footerButton}`;
+  } else if (isSubscribed) {
+    buttonClass += ` ${styles.succesState}`;
+  } else if (secondary) {
     buttonClass += ` ${styles.secondaryBtn}`;
   } else if (addToCart) {
     buttonClass += ` ${styles.addToCartBtn}`;
