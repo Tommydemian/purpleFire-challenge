@@ -6,14 +6,12 @@ import { isValidEmail } from "../../../../utils/validateEmail";
 export const NewsletterSubscription = () => {
   const [email, setEmail] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
-  const [isButtonActive, setIsButtonActive] = useState(true);
 
   const handleSubscribe = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     if (isValidEmail(email)) {
       setIsSubscribed(true);
-      setIsButtonActive(false);
     } else {
       alert("Please enter a valid email address.");
     }

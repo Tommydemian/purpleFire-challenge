@@ -1,6 +1,6 @@
 import React from "react";
 import { ProductMainButton } from "../../../../components/ProductDetailsPage/ProductMainButton/ProductMainButton";
-import { ButtonCartIcon } from "../../../../components/ProductDetailsPage/Icons/buttonCart";
+import { ButtonCartIcon } from "../../../../components/ProductDetailsPage/Icons/ButtonCart";
 import { CustomIcon } from "../../../../components/Common/CustomIcon/CustomIcon";
 
 import styles from "./ProductCard.module.css";

@@ -1,5 +1,4 @@
 import { ProductCard } from "./ProductCard/ProductCard";
-import { CustomIcon } from "../../../components/Common/CustomIcon/CustomIcon";
 import { IndicatorList } from "./IndicatorsList/IndicatorList";
 
 import styles from "./RelatedProductsSection.module.css";
