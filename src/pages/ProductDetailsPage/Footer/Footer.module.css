@@ -1,0 +1,33 @@
+.footer {
+  background-color: #2f333a;
+}
+
+.sectionContainer {
+  background-color: #2f333a;
+  padding-top: 2.5rem;
+  height: 15.813rem;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 0.625rem;
+  line-height: 0.75625rem;
+  color: var(--clr-white);
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+}
+
+.copy {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.9075rem;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 20px;
+}
