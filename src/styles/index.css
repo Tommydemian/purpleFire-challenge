@@ -87,22 +87,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media screeen and (min-width: 30em) {
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
-
-/* color-scheme: light dark; */
 
 /* General styling */
 body {

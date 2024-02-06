@@ -36,11 +36,14 @@
 .allCategoriesButton {
   color: var(--products-clr-text-primary);
   font-weight: var(--fw-light);
-  font-size: clamp(0.7rem, 2.5vw, var(--fs-xl));
+  font-size: clamp(0.4rem, 2.5vw, var(--fs-xl));
   line-height: var(--lh-200);
   padding-right: clamp(2em, 4vw, 131px);
   padding-left: var(--size-300);
   flex-wrap: wrap;
+}
+
+.menuBar {
 }
 
 .authLinksContainer {
@@ -151,4 +154,11 @@
   .userInteractionsContainer {
     flex-direction: column;
   }
+  .menuWrapper {
+    display: none;
+  }
+}
+
+.menuButtonContainer {
+  display: none;
 }

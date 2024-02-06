@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-
 import { NavDropdownButton } from "../../NavDropdownButton/NavDropdownButton";
 import { MenuIcon } from "../../../../../components/ProductDetailsPage/Icons/Menu";
 
@@ -19,7 +18,8 @@ export const CategoryMenuButton = () => {
 
   return (
     <div className={styles.menuButtonContainer}>
-      <MenuIcon />
+      <MenuIcon className={styles.menuicon} />
+
       <NavDropdownButton
         iconActive={true}
         onIconClick={handleDropwdownVisibility}

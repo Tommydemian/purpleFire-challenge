@@ -64,8 +64,5 @@ dropdown.visible {
   text-align: center;
 }
 
-@media screen and (min-width: 30em) and (max-width: 51.5rem) {
-  .text {
-    display: none;
-  }
+@media screen and (min-width: 25em) and (min-width: 50em) {
 }

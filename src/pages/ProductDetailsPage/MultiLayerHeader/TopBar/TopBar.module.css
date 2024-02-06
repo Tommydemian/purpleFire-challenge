@@ -10,7 +10,7 @@
 .topBarText {
   color: var(--clr-white);
   font-weight: var(--fw-light);
-  /* font-size: clamp(1rem); */
+
   font-size: clamp(0.8rem, 2.5vw, 1rem);
 }
 .topBarButton {
