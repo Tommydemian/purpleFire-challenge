@@ -1,0 +1,57 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.0625rem; /* 17px */
+  letter-spacing: 0em;
+}
+
+.primaryBtn {
+  color: var(--clr-white);
+  background-color: var(--products-clr-primary);
+  padding: 0.3em 2em;
+  transition: background-color 300ms linear;
+}
+
+.secondaryBtn {
+  color: var(--products-clr-primary);
+  background-color: var(--clr-white);
+  padding: 0.3em 2em;
+  border: 1px solid var(--products-clr-primary);
+  transition: background-color 300ms linear;
+}
+
+.addToCartBtn {
+  background-color: var(--clr-white);
+  color: #6f6f6f;
+  font-weight: 500;
+  font-size: 0.5rem;
+  line-height: 0.625rem;
+  letter-spacing: 0em;
+  transition: background-color 300ms linear;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+}
+
+.isMobile {
+  height: 2rem !important;
+  padding-inline: 1.5rem;
+}
+
+/* Hover state for both buttons */
+.primaryBtn:hover {
+  background-color: #c22900;
+}
+
+.secondaryBtn:hover {
+  background-color: #f3f3f3;
+}
+
+.addToCartBtn:hover {
+  background-color: #f3f3f3;
+}

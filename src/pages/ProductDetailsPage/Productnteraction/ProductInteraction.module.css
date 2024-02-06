@@ -1,0 +1,79 @@
+.sectionContainer {
+  padding-block: 10px;
+  box-shadow: -4px 0px 4px 4px #0000000d;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 0.625rem; /* 10px */
+  font-weight: 300;
+  line-height: 0.75rem; /* 12px */
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--products-clr-text-primary);
+}
+
+.amount {
+  font-weight: 500;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.36125rem; /* 21.78px */
+  color: var(--products-clr-text-primary);
+}
+
+.amountStrikedThrough {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 1rem; /* 16px */
+  line-height: 1.21rem; /* 19.36px */
+  color: #d7d7d7;
+  text-decoration: line-through;
+}
+
+.interactionContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.quantitySelector {
+  display: flex;
+  width: 70px;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quantitySelector > input {
+  text-align: center;
+  /* Otras propiedades que solo aplican al input */
+  width: 2em; /* por ejemplo */
+  border: 0.0625rem solid #d9d9d9; /* 1px */
+}
+
+.quantitySelector > button.selectorBtn {
+  cursor: pointer;
+  background-color: var(--clr-white);
+  width: 2em; /* 25px */
+  border: 0.0625rem solid #d9d9d9; /* 1px */
+}
+
+.mainBtn,
+.secondaryBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.0625rem; /* 17px */
+  letter-spacing: 0em;
+}
+
+.mainBtn {
+  color: var(--clr-white);
+  background-color: var(--products-clr-primary);
+  padding: 1em 2em;
+  transition: background-color 300ms linear;
+}

@@ -1,0 +1,88 @@
+.interactionContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.interactionContainer button {
+  font-weight: 500;
+  font-size: 0.375rem;
+  line-height: 0.4375rem;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--clr-white);
+  border-radius: 100px;
+  width: 31px;
+  height: 11px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.greenButton {
+  background-color: #12a05c;
+}
+.orangeButton {
+  background-color: var(--products-clr-primary);
+}
+
+.card {
+  background-color: #f1f1f1;
+  padding-bottom: 20px;
+  padding-top: 11px;
+  padding-inline: 8px;
+  max-width: 132px;
+  margin-inline: auto;
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #d7d7d7;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonContainer > button {
+  column-gap: 1em;
+  align-items: baseline;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 0.6875rem;
+  line-height: 0.8125rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--products-clr-text-primary);
+  padding-top: 12px;
+  text-align: left;
+}
+
+.priceWrapper {
+  display: flex;
+  column-gap: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.priceWrapper .price {
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 0.9075rem;
+  color: var(--products-clr-text-primary);
+}
+.priceWrapper .prevPrice {
+  font-weight: 600;
+  font-size: 0.625rem;
+  line-height: 0.75625rem;
+  color: #d9d9d9;
+  text-decoration: line-through;
+}

@@ -1,0 +1,42 @@
+.sectionContainer {
+  padding-block: 10px;
+}
+.tabHeaders {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 0.7px #d9d9d9;
+  padding-bottom: 0.7rem;
+}
+.tabHeaders button {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: var(--products-clr-text-primary);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.6875rem;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.activeTab::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.7rem;
+  width: 100%;
+  border-bottom: 1px solid var(--products-clr-primary);
+}
+
+.tabContent {
+  font-weight: 300;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--products-clr-text-primary);
+  padding-block: 1rem;
+}

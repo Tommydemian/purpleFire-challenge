@@ -1,5 +1,5 @@
 import { TrendsContent } from "./TrendsContent/TrendsContent";
-import { NewsletterSignup } from "../../../components/LandingPage/NewsletterSignup/NewsletterSignup";
+import { NewsletterSignup } from "../../../components/LandingPage/NewsletterSignup/NewsletterSignupSection";
 import styles from "./TrendsSection.module.css";
 
 export const TrendsSection = () => {
